@@ -1,19 +1,24 @@
-# 通用文档解锁工具 v2.0
+# 通用文档解锁工具 / Document Unlocker v2.0
 
 一款基于 Python 的文档解锁工具，支持移除 Word、Excel、PDF、PPTX 文档的编辑保护和水印。
 
-![GUI截图](docs/screenshot.png)
+A Python-based document unlocker that removes edit protection and watermarks from Word, Excel, PDF, and PPTX files.
 
-## ✨ 功能特性
+## ✨ 功能特性 / Features
 
-| 格式 | 编辑保护移除 | 水印移除 | 说明 |
+| 格式 Format | 编辑保护移除 Protection | 水印移除 Watermark | 说明 Description |
 |------|-------------|---------|------|
-| Word (.docx) | ✅ | ✅ | 移除文档保护、VML水印、背景水印 |
-| Excel (.xlsx) | ✅ | ✅ | 移除工作簿/工作表保护、背景图片 |
-| PDF (.pdf) | - | ✅ | 移除旋转文本水印（基于变换矩阵检测） |
-| PPTX (.pptx) | ✅ | ✅ | 移除演示文稿保护、艺术字水印 |
+| Word (.docx) | ✅ | ✅ | 文档保护、VML水印 |
+| Excel (.xlsx) | ✅ | ✅ | 工作簿/工作表保护 |
+| PDF (.pdf) | - | ✅ | 旋转文本水印 |
+| PPTX (.pptx) | ✅ | ✅ | 演示文稿保护、艺术字水印 |
 
-> ⚠️ **注意**：本工具无法处理**密码加密**的文档（需要密码才能打开的文档）。仅能处理设置了**编辑保护**的文档。
+### 🌐 多语言支持 / Multilingual
+
+- 中文 / English 界面切换
+- 点击底部「🌐」按钮切换语言
+
+> ⚠️ **注意**：本工具无法处理**密码加密**的文档（需要密码才能打开的文档）。
 
 ## 🔬 技术原理
 
@@ -30,19 +35,14 @@
 
 ### 方式一：直接运行（推荐）
 
-下载 [Releases](https://github.com/your-username/document-toolkit/releases) 中的 `document_toolkit.exe`，双击运行。
+下载 [Releases](https://github.com/qhaitao/watermarkremover/releases) 中的 `DocumentUnlocker.exe`，双击运行。
 
 ### 方式二：源码运行
 
 ```bash
-# 克隆仓库
-git clone https://github.com/your-username/document-toolkit.git
-cd document-toolkit
-
-# 安装依赖
+git clone https://github.com/qhaitao/watermarkremover.git
+cd watermarkremover
 pip install -r requirements.txt
-
-# 运行
 python document_toolkit_gui.py
 ```
 
