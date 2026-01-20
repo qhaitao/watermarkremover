@@ -581,7 +581,7 @@ class DocumentUnlockerGUI:
         info_frame.pack(fill=tk.X, pady=(0, 10))
         
         info_items = [
-            ("🔧 功能:", "Word/Excel保护解除并去水印、PDF/PPTX水印移除"),
+            ("🔧 功能:", "Word/Excel移除保护及水印、PDF/PPTX水印移除"),
             ("📁 格式:", "PDF, PPTX, PPT, DOC, DOCX, XLS, XLSX"),
             ("⚡ 特点:", "批量处理、拖拽上传、保持原格式"),
         ]
