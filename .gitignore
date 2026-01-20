@@ -20,11 +20,7 @@ wheels/
 .installed.cfg
 *.egg
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Virtual environments
+# Virtual Environment
 venv/
 ENV/
 env/
@@ -35,17 +31,33 @@ env/
 .vscode/
 *.swp
 *.swo
+*~
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
+Desktop.ini
 
 # Project specific
-_pptx_temp/
-_pptx_processing/
-_compare_*/
-*.log
+_temp_*
+*_unlocked.*
+*_无水印.*
+*_处理后.*
+_pptx_temp_*/
 
-# Test files (uncomment if needed)
-# *.pdf
-# *.pptx
+# Test files
+*.docx
+*.xlsx
+*.pdf
+*.pptx
+!test/
+
+# Distribution
+*.exe

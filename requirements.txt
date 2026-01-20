@@ -1,2 +1,4 @@
 pikepdf>=8.0.0
 tkinterdnd2>=0.3.0
+python-docx>=0.8.0
+pywin32>=300; sys_platform == 'win32'
