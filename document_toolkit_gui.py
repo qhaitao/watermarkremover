@@ -61,8 +61,8 @@ THEME = {
 
 LANGUAGES = {
     'zh': {
-        'app_title': '通用文档解锁工具 v2.0',
-        'main_title': '通用文档解锁工具',
+        'app_title': 'FileFree v2.0 - 文件自由',
+        'main_title': 'FileFree',
         'file_select': '📁 文件选择',
         'drop_hint': '拖拽文件到这里',
         'drop_sub': '或点击下方按钮选择文件',
@@ -101,8 +101,8 @@ LANGUAGES = {
         'lang_switch': '🌐 English',
     },
     'en': {
-        'app_title': 'Document Unlocker v2.0',
-        'main_title': 'Document Unlocker',
+        'app_title': 'FileFree v2.0 - File Freedom',
+        'main_title': 'FileFree',
         'file_select': '📁 File Selection',
         'drop_hint': 'Drop files here',
         'drop_sub': 'or click button below to select',

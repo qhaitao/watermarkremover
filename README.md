@@ -1,4 +1,4 @@
-# 通用文档解锁工具 / Document Unlocker v2.0
+# FileFree - 文件自由 / File Freedom
 
 一款基于 Python 的文档解锁工具，支持移除 Word、Excel、PDF、PPTX 文档的编辑保护和水印。
 
@@ -35,7 +35,7 @@ A Python-based document unlocker that removes edit protection and watermarks fro
 
 ### 方式一：直接运行（推荐）
 
-下载 [Releases](https://github.com/qhaitao/watermarkremover/releases) 中的 `DocumentUnlocker.exe`，双击运行。
+下载 [Releases](https://github.com/qhaitao/watermarkremover/releases) 中的 `FileFree.exe`，双击运行。
 
 ### 方式二：源码运行
 
