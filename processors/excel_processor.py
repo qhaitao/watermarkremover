@@ -58,8 +58,12 @@ class ExcelProcessor(DocumentProcessor):
                     success = self._process_xlsx(xlsx_path)
                     output_path = xlsx_path
                 else:
-                    # 使用二进制方法
+                    # 转换失败，尝试二进制方法，或复制原文件
                     success = self._process_xls_binary(output_path)
+                    if not success:
+                        # 直接复制原文件
+                        return ProcessResult(True, str(output_path),
+                                           "XLS格式无法转换(需Excel/LibreOffice)，已复制原文件", 0)
             else:
                 success = self._process_xlsx(output_path)
             

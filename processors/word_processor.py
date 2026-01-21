@@ -56,7 +56,7 @@ class WordProcessor(DocumentProcessor):
                 return ProcessResult(False, message="文档被密码加密，无法处理")
             
             if input_path.suffix.lower() == '.doc':
-                # DOC文件必须转换为DOCX才能处理水印
+                # DOC文件必须转换为DOCX才能处理
                 print(f"  [INFO] 检测到.doc格式，正在转换为.docx...")
                 docx_path = self._convert_doc_to_docx(str(input_path))
                 
@@ -79,7 +79,11 @@ class WordProcessor(DocumentProcessor):
                     else:
                         return ProcessResult(False, message="DOCX处理失败")
                 else:
-                    return ProcessResult(False, message="DOC转换失败，请安装Microsoft Word")
+                    # 转换失败，直接复制并标记成功（保持原样）
+                    output_path = output_path or self.get_default_output(str(input_path), suffix)
+                    shutil.copy2(input_path, output_path)
+                    return ProcessResult(True, str(output_path), 
+                                        "DOC格式无法转换(需Word/LibreOffice)，已复制原文件", 0)
             else:
                 # 直接处理.docx文件
                 output_path = output_path or self.get_default_output(str(input_path), suffix)
